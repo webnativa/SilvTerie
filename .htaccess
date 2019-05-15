@@ -1,0 +1,7 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^silvterie\.com\.br$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.silvterie\.com\.br$
+
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.silvterie.com.br/$1 [R,L]
